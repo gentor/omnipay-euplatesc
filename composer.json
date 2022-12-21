@@ -1,5 +1,5 @@
 {
-  "name": "paytic/omnipay-euplatesc",
+  "name": "gentor/omnipay-euplatesc",
   "type": "library",
   "license": "MIT",
   "description": "Euplatesc driver for ThePhpLeague Omnipay multi-payment processing library",
@@ -12,8 +12,12 @@
     "pay",
     "payment"
   ],
-  "homepage": "https://github.com/paytic/omnipay-euplatesc",
+  "homepage": "https://github.com/gentor/omnipay-euplatesc",
   "authors": [
+    {
+      "name": "Evgeni Nurkov",
+      "email": "evgeni.nurkov@gmail.com"
+    },
     {
       "name": "Gabriel Solomon",
       "email": "hello@gabrielsolomon.ro"
@@ -31,7 +35,7 @@
     }
   },
   "require": {
-    "php": "^7.4|^8.0",
+    "php": "^7.3",
     "paytic/omnipay-common": "^3.0"
   },
   "require-dev": {
