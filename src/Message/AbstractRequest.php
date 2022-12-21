@@ -96,7 +96,7 @@ abstract class AbstractRequest extends CommonAbstractRequest
         return [
             'key',
             'mid',
-            'card'
+//            'card'
         ];
     }
 }

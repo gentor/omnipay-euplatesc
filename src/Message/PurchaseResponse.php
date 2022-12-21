@@ -17,7 +17,8 @@ class PurchaseResponse extends AbstractResponse implements RedirectResponseInter
      */
     public function getRedirectData()
     {
-        $data = array_merge($this->getDataProperty('order'), $this->getDataProperty('bill'));
+//        $data = array_merge($this->getDataProperty('order'), $this->getDataProperty('bill'));
+        $data = $this->getDataProperty('order');
         $data['fp_hash'] = $this->getDataProperty('fp_hash');
         $data['lang'] = $this->getDataProperty('lang', 'ro');
 
