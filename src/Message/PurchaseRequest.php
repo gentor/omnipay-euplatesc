@@ -26,10 +26,10 @@ class PurchaseRequest extends AbstractRequest
                 'orderName',
 //            'orderDate',
 //                'notifyUrl',
-                'returnUrl',
+//                'returnUrl',
                 'key',
                 'mid',
-//                'card'
+                'card'
             ]
         );
         return $fields;
@@ -43,7 +43,7 @@ class PurchaseRequest extends AbstractRequest
         $data = [];
 
         $this->populateDataOrder($data);
-//        $this->populateDataCard($data);
+        $this->populateDataCard($data);
 
         $data['redirectUrl'] = $this->getEndpointUrl();
         $data["fp_hash"] = $this->generateHmac($this->generateHashString($data['order']));
