@@ -18,7 +18,7 @@ to your `composer.json` file:
 ```json
 {
     "require": {
-        "bytic/omnipay-euplatesc": "^3.0"
+        "gentor/omnipay-euplatesc": "dev-master"
     }
 }
 ```
@@ -40,6 +40,7 @@ The supported gateway methods are:
 * `purchase()` - redirect customer to payment form
 * `completePurchase()` - for reading messages on redirect URL from gateway
 * `serverCompletePurchase()` - for reading messages on IPN URL from gateway
+* `fetchTransaction()` - check transaction status from gateway
 
 [ico-version]: https://img.shields.io/packagist/v/bytic/omnipay-euplatesc.svg
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg

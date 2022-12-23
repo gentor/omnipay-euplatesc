@@ -2,7 +2,9 @@
 
 namespace Paytic\Omnipay\Euplatesc;
 
+use Omnipay\Common\Message\AbstractRequest;
 use Paytic\Omnipay\Euplatesc\Message\CompletePurchaseRequest;
+use Paytic\Omnipay\Euplatesc\Message\FetchTransactionRequest;
 use Paytic\Omnipay\Euplatesc\Message\PurchaseRequest;
 use Paytic\Omnipay\Euplatesc\Message\ServerCompletePurchaseRequest;
 use Paytic\Omnipay\Euplatesc\Traits\HasIntegrationParametersTrait;
@@ -76,6 +78,16 @@ class Gateway extends AbstractGateway
     {
         return $this->createRequest(ServerCompletePurchaseRequest::class, $parameters);
     }
+
+    /**
+     * @param array $parameters
+     * @return Message\FetchTransactionRequest|AbstractRequest
+     */
+    public function fetchTransaction(array $parameters = array())
+    {
+        return $this->createRequest(FetchTransactionRequest::class, $parameters);
+    }
+
     // ------------ PARAMETERS ------------ //
 
     /** @noinspection PhpMissingParentCallCommonInspection
